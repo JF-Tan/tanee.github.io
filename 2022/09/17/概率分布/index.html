@@ -23,12 +23,12 @@
 <meta property="og:site_name" content="Tanee&#39;s Blog">
 <meta property="og:description" content="概率分布前言：想了又想，还是从最基础的数学写起吧，便于整个后续文章的逻辑性与连续完整性。前提需要补充一点点的概率论基础。1.概率基础随机变量：随机变量是在概率论最基础也最重要的概念之一，本章所主要讨论的概率分布就是以其为基础展开的。随机变量即为在随机事件活动中产生结果的数值。其本质是一种映射从随机事件结果到数值。虽然很抽象，但我们可以利用初等数学知识来从函数映射的角度去讨论： 我们可以认为随机变量">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://tanee.top/2022/09/17/img/1663439712822.png">
+<meta property="og:image" content="https://tanee.top/img/1663439712822.png">
 <meta property="article:published_time" content="2022-09-17T11:14:43.000Z">
-<meta property="article:modified_time" content="2022-09-17T20:02:57.717Z">
+<meta property="article:modified_time" content="2022-09-17T20:08:09.254Z">
 <meta property="article:author" content="Tanee">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://tanee.top/2022/09/17/img/1663439712822.png">
+<meta name="twitter:image" content="https://tanee.top/img/1663439712822.png">
   
   
   
@@ -282,7 +282,7 @@
 <li><p>随机变量 X 是 Ω上的函数，或者称为Ω上的映射</p>
 </li>
 <li><p>映射结果即为函数值，∀α∈Ω，X(α)</p>
-<img src="../img/1663439712822.png" srcset="/img/loading.gif" lazyload alt="1663439712822" style="zoom:50%;" /></li>
+<img src="/img/1663439712822.png" srcset="/img/loading.gif" lazyload alt="1663439712822" style="zoom:50%;" /></li>
 </ol>
 <p>举个栗子，抛硬币，0代表正面，1代表反面。上述约定其实就是随机变量的映射，将抛硬币这个试验的所有结果{正面，反面}映射到了数值{0,1}。</p>
 <p><strong>概率函数</strong>：对于随机变量X，定义一个概率函数为 f ，其给出了随机变量为每一个值的概率，如抛硬币：<br>$$<br>P(X&#x3D;0)&#x3D;\frac{1}{2}，P(X&#x3D;1)&#x3D;\frac{1}{2}\<br>f(X)&#x3D;{ \left{ \begin{array}{*{20}{l}}<br>\frac{1}{2}  ，X&#x3D;0\<br>\frac{1}{2}  ，X&#x3D;1<br>\end{array}\right. }<br>$$<br><strong>期望</strong>：期望是对随机变量中心位置的描述。或者可以说是一种加权平均。<br>$$<br>E(X)&#x3D;\Sigma xf(x)<br>$$<br>举个栗子，一个面额5元的刮刮奖抽奖例子：</p>
@@ -497,6 +497,12 @@
   
 
 
+  
+  
+
+
+
+
 
 
 
@@ -688,6 +694,49 @@
 
 
   <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 
