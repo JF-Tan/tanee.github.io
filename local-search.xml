@@ -4,6 +4,44 @@
   
   
   <entry>
+    <title>XX Batch Normalization批量归一化</title>
+    <link href="/2022/09/29/XX%20Batch%20Normalization%E6%89%B9%E9%87%8F%E5%BD%92%E4%B8%80%E5%8C%96%20/"/>
+    <url>/2022/09/29/XX%20Batch%20Normalization%E6%89%B9%E9%87%8F%E5%BD%92%E4%B8%80%E5%8C%96%20/</url>
+    
+    <content type="html"><![CDATA[<p>Batch Normalization论文地址：<a href="https://arxiv.org/abs/1502.03167">https://arxiv.org/abs/1502.03167</a></p><p>对于机器学习领域，独立同分布假设是指训练样本与测试样本是满足相同分布的。因此在训练样本上训练得到的模型才能在测试集上得到一个不错的表现。BatchNorm的作用就是在每一层的神经网络输出后保证数据是保持相同分布的。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>深度学习</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>【复现】ShuffleNet-v2</title>
+    <link href="/2022/09/21/%E3%80%90%E5%A4%8D%E7%8E%B0%E3%80%91fastestyolo-v2/"/>
+    <url>/2022/09/21/%E3%80%90%E5%A4%8D%E7%8E%B0%E3%80%91fastestyolo-v2/</url>
+    
+    <content type="html"><![CDATA[<p><img src="E:%5Ctakk_blog%5Csource%5Cimg%5C%E7%BD%91%E7%BB%9C%E7%BB%93%E6%9E%84.png" alt="网络结构"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>深度学习</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>【复现】ShuffleNet-v2</title>
     <link href="/2022/09/19/%E3%80%90%E5%A4%8D%E7%8E%B0%E3%80%91ShuffleNet-v2/"/>
     <url>/2022/09/19/%E3%80%90%E5%A4%8D%E7%8E%B0%E3%80%91ShuffleNet-v2/</url>
@@ -86,6 +124,25 @@
       <tag>info</tag>
       
     </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>PYNQ安装torch框架</title>
+    <link href="/2020/03/12/%E3%80%90%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E3%80%91PYNQ%E5%AE%89%E8%A3%85torch%E6%A1%86%E6%9E%B6/"/>
+    <url>/2020/03/12/%E3%80%90%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E3%80%91PYNQ%E5%AE%89%E8%A3%85torch%E6%A1%86%E6%9E%B6/</url>
+    
+    <content type="html"><![CDATA[<p>当前环境：</p><p>软件环境：PYNQ镜像2.7 + python3.8 （无虚拟环境）</p><p>硬件：pynqz2 + armv7l</p><p>在官方仓库找到想要版本的torch和torchvision <a href="https://torch.kmtea.eu/whl/stable-cn.html%E3%80%82">https://torch.kmtea.eu/whl/stable-cn.html。</a></p><img src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\1663764312411.png" alt="1663764312411" style="zoom: 33%;" /><img src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\1663764332781.png" alt="1663764332781" style="zoom:33%;" /><p>下载后复制到板子上：</p><p><img src="C:%5CUsers%5Clenovo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1663764375521.png" alt="1663764375521"></p><p>执行：</p><p><img src="C:%5CUsers%5Clenovo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1663764400113.png" alt="1663764400113"></p><p><img src="C:%5CUsers%5Clenovo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1663764409343.png" alt="1663764409343"></p><p>分别安装，然后重启即可。</p><p><img src="C:%5CUsers%5Clenovo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1663764466621.png" alt="1663764466621"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>环境安装配置</category>
+      
+    </categories>
+    
     
   </entry>
   
